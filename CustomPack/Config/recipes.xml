@@ -1,0 +1,150 @@
+<configs>
+	<!-- Reffers to the recipe's file -->
+	<append xpath="/recipes">
+		<!-- Adds modded recipes -->
+		
+			<!-- Recipe sharpStone -->
+				<recipe name="sharpStoneCP" count="2" scrapable="false">
+					<ingredient name="resourceRockSmall" count="1"/>
+				</recipe>
+			
+			<!-- Recipe long Stick -->
+				<recipe name="longStickCP" count="4" scrapable="false">
+					<ingredient name="resourceWood" count="1"/>
+				</recipe>
+			
+			<!-- Recipe Stick -->
+				<recipe name="stickCP" count="2" scrapable="false">
+					<ingredient name="longStickCP" count="1"/>
+				</recipe>
+			
+			<!-- Recipe Twine -->
+				<recipe name="twineCP" count="1" scrapable="true">
+					<ingredient name="resourceYuccaFibers" count="5"/>
+				</recipe>
+			
+			<!-- Recipe stone awrrow (you can also make arrows with featrhers tho!) -->
+				<recipe name="ammoArrowStone" count="1" scrapable="true">
+					<ingredient name="sharpStoneCP" count="1"/>
+					<ingredient name="stickCP" count="1"/>
+					<ingredient name="resourceScrapPolymers" count="1"/>
+				</recipe>
+			
+			
+			
+	</append>
+	<!-- Changed recipes from vanilla game XPATH -->
+		
+		<!-- XPATH remove small stome ingredients arrows-->
+			
+			<!-- arrows -->
+				<remove xpath="/recipes/recipe[@name='ammoArrowStone']/ingredient[@name='resourceRockSmall']"/>
+				<remove xpath="/recipes/recipe[@name='ammoBundleArrowStone']/ingredient[@name='resourceRockSmall']"/>
+				<remove xpath="/recipes/recipe[@name='ammoCrossbowBoltStone']/ingredient[@name='resourceRockSmall']"/>
+			
+			<!-- Weapons/tools -->
+				<remove xpath="/recipes/recipe[@name='meleeToolStoneAxe']/ingredient[@name='resourceRockSmall']"/>
+		
+		<!-- XPATH remove resourceWood ingredients arrows-->
+			
+			<!-- Stone -->
+				<remove xpath="/recipes/recipe[@name='ammoArrowStone']/ingredient[@name='resourceWood']"/>
+				<remove xpath="/recipes/recipe[@name='ammoBundleArrowStone']/ingredient[@name='resourceWood']"/>
+				<remove xpath="/recipes/recipe[@name='ammoCrossbowBoltStone']/ingredient[@name='resourceWood']"/>
+				<remove xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltStone']/ingredient[@name='resourceWood']"/>
+				
+			<!-- Iron -->
+				<remove xpath="/recipes/recipe[@name='ammoArrowIron']/ingredient[@name='resourceWood']"/>
+				<remove xpath="/recipes/recipe[@name='ammoBundleArrowIron']/ingredient[@name='resourceWood']"/>
+				<remove xpath="/recipes/recipe[@name='ammoCrossbowBoltIron']/ingredient[@name='resourceWood']"/>
+				<remove xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltIron']/ingredient[@name='resourceWood']"/>
+
+		
+		<!-- XPATH remove resourceWood ingredients weapons -->
+			<!-- Bows -->
+				<remove xpath="/recipes/recipe[@name='gunBowPrimitive']/ingredient[@name='resourceWood']"/>
+				<remove xpath="/recipes/recipe[@name='gunBowWooden']/ingredient[@name='resourceWood']"/>
+				<remove xpath="/recipes/recipe[@name='gunCrossbowIron']/ingredient[@name='resourceWood']"/>
+				
+		<!-- Melee weapons/tools -->
+			<!-- removes Wood -->
+				<remove xpath="/recipes/recipe[@name='meleeToolStoneAxe']/ingredient[@name='resourceWood']"/>
+				<remove xpath="/recipes/recipe[@name='meleeToolTorch']/ingredient[@name='resourceWood']"/>
+		
+		<!-- removes fiber -->
+			<!-- Removes plant fiber -->
+				<remove xpath="/recipes/recipe[@name='gunBowPrimitive']/ingredient[@name='resourceYuccaFibers']"/>
+				<remove xpath="/recipes/recipe[@name='meleeToolStoneAxe']/ingredient[@name='resourceYuccaFibers']"/>
+				<remove xpath="/recipes/recipe[@name='meleeThrownSpearStone']/ingredient[@name='resourceYuccaFibers']"/>
+				
+				
+		<!-- Adds ingredients for recipes-->
+			
+			<!-- Adds Stick resipe to arrows -->
+				<!-- not bundles -->
+					<append xpath="/recipes/recipe[@name='ammoArrowStone' or @name='ammoBundleArrowStone' or @name='ammoBundleArrowIron' or @name='ammoArrowIron' or @name='ammoCrossbowBoltIron' or @name='ammoBundleCrossbowBoltIron' or @name='ammoCrossbowBoltStone' or @name='ammoBundleCrossbowBoltStone']">
+						<ingredient name="stickCP" count="1"/>
+					</append>
+					
+				<!-- bows-->
+					<append xpath="/recipes/recipe[@name='gunBowPrimitive' or @name='gunBowWooden' or @name='gunCrossbowIron']">
+						<ingredient name='longStickCP' count='1'/>
+					</append>
+				
+				<!-- melee weapons/tools-->
+					<append xpath="/recipes/recipe[@name='meleeToolStoneAxe' or @name='meleeToolTorch']">
+						<ingredient name='stickCP' count='2'/>
+					</append>
+				
+				<!-- bundle -->
+					<append xpath="/recipes/recipe[@name='ammoBundleArrowStone' or @name='ammoBundleArrowIron' or @name='ammoBundleCrossbowBoltIron' or @name='ammoBundleCrossbowBoltStone']">
+						<ingredient name="stickCP" count="80"/>
+					</append>
+			
+					
+			<!-- Adds sharp stone recipe -->
+				<!-- Not bundle -->
+				
+				<!-- Arrows -->
+					<append xpath="/recipes/recipe[@name='ammoArrowStone' or @name='ammoCrossbowBoltStone']">
+						<ingredient name="sharpStoneCP" count="1"/>
+					</append>
+					
+				<!-- Melee weapons/tools -->
+					<append xpath="/recipes/recipe[@name='meleeToolStoneAxe']">
+						<ingredient name="sharpStoneCP" count="1"/>
+					</append>
+					
+				<!-- Bundle -->
+				
+				<!-- Arrows -->
+					<append xpath="/recipes/recipe[@name='ammoBundleArrowStone' or @name='ammoBundleCrossbowBoltStone']">
+						<ingredient name="sharpStoneCP" count="80"/>
+					</append>
+			
+			<!-- Adds Twine -->
+				
+				<!-- Not Bundle -->
+				<!-- Bow -->
+					<append xpath="/recipes/recipe[@name='gunBowPrimitive' or @name='meleeToolStoneAxe' or @name='meleeThrownSpearStone']">
+						<ingredient name="twineCP" count="1"/>
+					</append>
+				
+				<!-- Arrows -->
+				<!-- Not bundle -->
+					<append xpath="/recipes/recipe[@name='ammoArrowStone' or @name='ammoCrossbowBoltStone' or @name='ammoArrowIron'or @name='ammoCrossbowBoltIron']">
+						<ingredient name="twineCP" count="1"/>
+					</append>
+					
+				<!-- Bundle -->
+					<append xpath="/recipes/recipe[@name='ammoBundleArrowStone' or @name='ammoBundleCrossbowBoltStone' or @name='ammoBundleArrowIron' or @name='ammoBundleCrossbowBoltIron']">
+						<ingredient name="twineCP" count="80"/>
+					</append>
+					
+				
+				
+				
+				
+				
+</configs>
+

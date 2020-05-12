@@ -1,0 +1,93 @@
+<configs>
+	<!-- Backpack config -->
+	<set xpath="/items/item[@name='drugSteroids']/effect_group/display_value[@name='dCarryCapacity' and @value]/@value">96</set>
+		<!-- reffers to the item's file -->
+		<append xpath="/items">
+			<!-- Modded items -->
+			
+			<!-- item sharp stone -->
+			<item name="sharpStoneCP">
+				<property name="HoldType" value="40"/>
+				<property name="Meshfile" value="#Other/Items?Crafting/rock_smallPrefab.prefab"/>
+				<property name="DropScale" value="6"/>
+				<property name="Material" value="MresourceRockSmall"/>
+				<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+				<property name="RepairAmount" value="300"/>
+				<property name="RepairTime" value=".5"/>
+				<property name="Weight" value="5"/>
+				<property name="MeltTimePerUnit" value=".5"/>
+				<property name="EconomicValue" value="50"/>
+				<property name="EconomicBundleSize" value="50"/>
+				<property class="Action0">
+					<property name="Class" value="ThrowAway"/>
+					<property name="Delay" value="1.2"/> <!-- obsolete if rounds per minute exists -->
+					<property name="Throw_strength_default" value="8"/>
+					<property name="Throw_strength_max" value="60"/>
+					<property name="Max_strain_time" value="1.25"/>
+					<property name="Sound_start" value="swoosh"/>
+				</property>
+				<property name="ThrowableDecoy" value="true"/>
+				<property name="DistractionTags" value="zombie,requires_contact"/>
+				<effect_group name="decoy" tiered="false">
+					<passive_effect name="DistractionRadius" operation="base_set" value="25"/>
+					<passive_effect name="DistractionLifetime" operation="base_set" value="1"/>
+					<passive_effect name="DistractionStrength" operation="base_set" value="100"/>
+				</effect_group>
+				<property name="Group" value="Resources"/>
+				<property name="CraftingIngredientTime" value=".3"/>
+			</item>
+			
+			<!-- item Stick -->
+			<item name="stickCP"> <!-- scrap material -->
+				<property name="HoldType" value="45"/>
+				<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+				<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+				<property name="Material" value="MresourceWood"/>
+				<property name="Weight" value="5"/>
+				<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+				<property name="FuelValue" value="15"/>
+				<property name="EconomicValue" value="10"/>
+				<property name="EconomicBundleSize" value="25"/>
+				<property name="Group" value="Resources"/>
+				<property name="RepairAmount" value="100"/>
+				<property name="LootExpValue" value="1"/>
+				<property name="CraftingIngredientTime" value=".3"/>
+			</item>
+			
+			<!-- item long Stick -->
+			<item name="longStickCP"> <!-- scrap material -->
+				<property name="HoldType" value="45"/>
+				<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+				<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+				<property name="Material" value="MresourceWood"/>
+				<property name="Weight" value="5"/>
+				<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+				<property name="FuelValue" value="15"/>
+				<property name="EconomicValue" value="10"/>
+				<property name="EconomicBundleSize" value="25"/>
+				<property name="Group" value="Resources"/>
+				<property name="RepairAmount" value="100"/>
+				<property name="LootExpValue" value="1"/>
+				<property name="CraftingIngredientTime" value=".3"/>
+			</item>
+			
+			<!-- Item Twine -->
+			<item name="twineCP"> <!-- scrap material -->
+				<property name="HoldType" value="16"/>
+				<property name="Meshfile" value="#Other/Items?Crafting/plant_fibers.fbx"/>
+				<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+				<property name="Weight" value="1"/>
+				<property name="Material" value="MresourceYuccaFibers"/>
+				<property name="RepairTime" value="1"/>
+				<property name="RepairAmount" value="30"/>
+				<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+				<property name="FuelValue" value="1"/>
+				<property name="EconomicValue" value="5"/>
+				<property name="EconomicBundleSize" value="50"/>
+				<property name="SellableToTrader" value="false"/>
+				<property name="Group" value="Resources"/>
+			</item>
+			
+		</append>
+		
+</configs>

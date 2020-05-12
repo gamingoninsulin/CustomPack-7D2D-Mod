@@ -1,0 +1,4 @@
+<configs>
+<set xpath="progression/perks/perk[@name='perkPackMule']/effect_group/passive_effect[@name='CarryCapacity' and @value]/@value">18,30,42,54,78</set>
+</configs>
+

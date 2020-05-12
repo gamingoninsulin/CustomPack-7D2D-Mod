@@ -1,0 +1,15 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+sharpStoneCP,Items,Resource,,,"Sharp Stone"
+sharpStoneCPDesc,Items,Resource,,,"Sharp Rock is used for making stone tools and ammo."
+
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+longStickCP,Items,Resource,,,"Long Stick"
+longStickCRDesc,Items,Resource,,,"Long Stick is used for making smallers sticks and a bow."
+
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+stickCP,Items,Resource,,,"Small Stick"
+stickCRDesc,Items,Resource,,,"Small Stick is used for making stone tools and ammo."
+
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+twineCP,Items,Resource,,,"Twine"
+twineCRDesc,Items,Resource,,,"Twine is made from plant fibers to create a sting item that used for a bow or some kind."
