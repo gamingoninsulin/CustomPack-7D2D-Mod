@@ -13,9 +13,8 @@ is used for arrows and basic stone axe
 - Twine
    > twine is used to be crafing a bow, stone spear, a stone axe and arrows
 
-```diff
-! ---
-```
+---
+
 ## FAQ:
 **what does it do?**
 
@@ -32,9 +31,7 @@ You make them now with actual stick and sharp stone
 
 Check about the licence here [Licence](https://nl.wikipedia.org/wiki/GNU_General_Public_License)
 
-```diff
-! ---
-```
+---
 
 ## Download/install Client and Server:
 - navigate to [Releases](https://github.com/gamingoninsulin/CustomPack/releases)
@@ -43,9 +40,7 @@ Check about the licence here [Licence](https://nl.wikipedia.org/wiki/GNU_General
 - create a folder called "Mods"
 - unzip the "CustomPack.zip" in the "Mods" folder
 
-```diff
-! ---
-```
+---
 
 ## Changelogs
 
@@ -61,9 +56,7 @@ Check about the licence here [Licence](https://nl.wikipedia.org/wiki/GNU_General
 
 - removed the .disabled files (because i did not use them)
 
-```diff
-! ---
-```
+---
 
 ### ChangeLog 1.1(.0):
 - added a bigger backpack
@@ -77,13 +70,10 @@ Changed primitive bow recipe :
 - removed fiber from the bow
 - added twine to the bow
 
-```diff
-! ---
-```
+---
 
 ###  ChangeLog 1.0(.0):
-```diff
- + - Added config folder with all the xml (some are disabled because i dont use them yet!)
- + - Added 2 new images StickCR.png, sharpStoneCR.png and DUMMY.png (Dummy.png does notting)
- + - Added Localization.txt
-```
+  - Added config folder with all the xml (some are disabled because i dont use them yet!)
+  - Added 2 new images StickCR.png, sharpStoneCR.png and DUMMY.png (Dummy.png does notting)
+  - Added Localization.txt
+
