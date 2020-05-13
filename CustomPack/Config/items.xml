@@ -36,24 +36,7 @@
 				<property name="Group" value="Resources"/>
 				<property name="CraftingIngredientTime" value=".3"/>
 			</item>
-			
-			<!-- item Stick -->
-			<item name="stickCP"> <!-- scrap material -->
-				<property name="HoldType" value="45"/>
-				<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
-				<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-				<property name="Material" value="MresourceWood"/>
-				<property name="Weight" value="5"/>
-				<property name="Stacknumber" value="6000"/> <!-- STK resource -->
-				<property name="FuelValue" value="15"/>
-				<property name="EconomicValue" value="10"/>
-				<property name="EconomicBundleSize" value="25"/>
-				<property name="Group" value="Resources"/>
-				<property name="RepairAmount" value="100"/>
-				<property name="LootExpValue" value="1"/>
-				<property name="CraftingIngredientTime" value=".3"/>
-			</item>
-			
+						
 			<!-- item long Stick -->
 			<item name="longStickCP"> <!-- scrap material -->
 				<property name="HoldType" value="45"/>
@@ -71,6 +54,23 @@
 				<property name="CraftingIngredientTime" value=".3"/>
 			</item>
 			
+			<!-- item Stick -->
+			<item name="stickCP"> <!-- scrap material -->
+				<property name="HoldType" value="45"/>
+				<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+				<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+				<property name="Material" value="MresourceWood"/>
+				<property name="Weight" value="5"/>
+				<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+				<property name="FuelValue" value="15"/>
+				<property name="EconomicValue" value="10"/>
+				<property name="EconomicBundleSize" value="25"/>
+				<property name="Group" value="Resources"/>
+				<property name="RepairAmount" value="100"/>
+				<property name="LootExpValue" value="1"/>
+				<property name="CraftingIngredientTime" value=".3"/>
+			</item>
+
 			<!-- Item Twine -->
 			<item name="twineCP"> <!-- scrap material -->
 				<property name="HoldType" value="16"/>
@@ -86,6 +86,22 @@
 				<property name="EconomicBundleSize" value="50"/>
 				<property name="SellableToTrader" value="false"/>
 				<property name="Group" value="Resources"/>
+			</item>
+			
+			<!-- clothStripsCP -->
+			<item name="clothStripsCP"> <!-- scrap material -->
+				<property name="HoldType" value="45"/>
+				<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+				<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+				<property name="Material" value="Mcloth"/>
+				<property name="Stacknumber" value="250"/> <!-- STK resource -->
+				<property name="RepairAmount" value="50"/>
+				<property name="FuelValue" value="1"/>
+				<property name="Weight" value="5"/>
+				<property name="EconomicValue" value="10"/>
+				<property name="EconomicBundleSize" value="10"/>
+				<property name="Group" value="Resources,Clothing"/>
+				<property name="UnlockedBy" value="perkWasteTreasuresCloth"/>
 			</item>
 			
 		</append>

@@ -29,7 +29,11 @@
 					<ingredient name="stickCP" count="1"/>
 					<ingredient name="resourceScrapPolymers" count="1"/>
 				</recipe>
-			
+				
+			<!-- Recipe cloths strips -->
+				<recipe name="clothStripsCP" count="4" >
+					<ingredient name="resourceCropCottonPlant" count="2"/>
+				</recipe>
 			
 			
 	</append>
@@ -67,15 +71,26 @@
 				<remove xpath="/recipes/recipe[@name='gunCrossbowIron']/ingredient[@name='resourceWood']"/>
 				
 		<!-- Melee weapons/tools -->
-			<!-- removes Wood -->
+			<!-- tools -->
 				<remove xpath="/recipes/recipe[@name='meleeToolStoneAxe']/ingredient[@name='resourceWood']"/>
 				<remove xpath="/recipes/recipe[@name='meleeToolTorch']/ingredient[@name='resourceWood']"/>
 		
 		<!-- removes fiber -->
-			<!-- Removes plant fiber -->
+			<!-- ammo weapons -->
 				<remove xpath="/recipes/recipe[@name='gunBowPrimitive']/ingredient[@name='resourceYuccaFibers']"/>
 				<remove xpath="/recipes/recipe[@name='meleeToolStoneAxe']/ingredient[@name='resourceYuccaFibers']"/>
 				<remove xpath="/recipes/recipe[@name='meleeThrownSpearStone']/ingredient[@name='resourceYuccaFibers']"/>
+				
+		<!-- removes cloth -->
+			<!-- banage -->
+				<remove xpath="/recipes/recipe[@name='medicalBandage']/ingredient[@name='resourceCloth']"/>
+				<remove xpath="/recipes/recipe[@name='medicalPlasterCast']/ingredient[@name='resourceCloth']"/>
+				
+			<!-- cloth fragments -->
+				<remove xpath="/recipes/recipe[@name='resourceCloth']/ingredient[@name='resourceCropCottonPlant']"/>
+				
+				
+				
 				
 				
 		<!-- Adds ingredients for recipes-->
@@ -142,9 +157,16 @@
 					</append>
 					
 				
+			<!-- Adds Cloth Strips -->
+				<!-- bandage -->
+					<append xpath="/recipes/recipe[@name='medicalBandage' or @name='medicalPlasterCast']">
+						<ingredient name="clothStripsCP" count="1"/>
+					</append>
 				
-				
-				
+				<!-- cloth fragment -->
+					<append xpath="/recipes/recipe[@name='resourceCloth']">
+						<ingredient name="clothStripsCP" count="4"/>
+					</append>
 				
 </configs>
 
