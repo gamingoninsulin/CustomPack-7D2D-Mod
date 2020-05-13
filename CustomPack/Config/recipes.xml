@@ -34,7 +34,10 @@
 				<recipe name="clothStripsCP" count="4" >
 					<ingredient name="resourceCropCottonPlant" count="2"/>
 				</recipe>
-			
+				
+				<recipe name="clothStripsCP" count="8" >
+					<ingredient name="resourceCloth" count="1"/>
+				</recipe>
 			
 	</append>
 	<!-- Changed recipes from vanilla game XPATH -->
